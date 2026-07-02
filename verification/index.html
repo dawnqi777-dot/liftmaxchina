@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICR Certificate Verification</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .logo-icon::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+        }
+
+        .logo-text {
+            font-size: 28px;
+            font-weight: bold;
+            color: #1a365d;
+            letter-spacing: 2px;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .nav-right span {
+            cursor: pointer;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 0 40px;
+        }
+
+        .cert-title {
+            font-size: 24px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .cert-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+
+        .cert-table tr {
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .cert-table tr:first-child {
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .cert-table td {
+            padding: 12px 16px;
+            font-size: 14px;
+        }
+
+        .cert-table td:first-child {
+            width: 180px;
+            color: #333;
+            font-weight: 500;
+            background-color: #fafafa;
+            border-right: 1px solid #e5e7eb;
+        }
+
+        .cert-table td:last-child {
+            color: #333;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #f3f4f6;
+            padding: 40px;
+            text-align: center;
+            font-size: 13px;
+            color: #999;
+            margin-top: 80px;
+        }
+
+        .footer-top {
+            margin-bottom: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .header {
+                padding: 15px 20px;
+            }
+
+            .logo-text {
+                font-size: 20px;
+            }
+
+            .nav-right {
+                font-size: 12px;
+                gap: 10px;
+            }
+
+            .container {
+                padding: 0 20px;
+                margin: 30px auto;
+            }
+
+            .cert-title {
+                font-size: 20px;
+            }
+
+            .cert-table td:first-child {
+                width: 120px;
+                font-size: 13px;
+            }
+
+            .cert-table td {
+                font-size: 13px;
+                padding: 10px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <div class="logo-icon">ICR</div>
+            <span class="logo-text">ICR</span>
+        </div>
+        <div class="nav-right">
+            <span>SEARCH</span>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1 class="cert-title">ICR/VC/HE250742</h1>
+        
+        <table class="cert-table">
+            <tr>
+                <td>Certificate No.:</td>
+                <td>ICR/VC/HE250742</td>
+            </tr>
+            <tr>
+                <td>Date of issue:</td>
+                <td>01.03.2026</td>
+            </tr>
+            <tr>
+                <td>Date of validity:</td>
+                <td>28.02.2031</td>
+            </tr>
+            <tr>
+                <td>Remarks:</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Certificate owner.:</td>
+                <td>Risline Intelligent Equipment Co., Ltd.</td>
+            </tr>
+            <tr>
+                <td>Name of product:</td>
+                <td>Lift Platform</td>
+            </tr>
+        </table>
+    </main>
+
+
+</body>
+</html>
